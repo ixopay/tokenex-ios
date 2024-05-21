@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:README.md">
+   </FileRef>
+   <FileRef
+      location = "container:TokenExMobileAPI.podspec"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <FileRef
+      location = "container:justfile"
+      assignedFileDataType = "public.make-source">
+   </FileRef>
+   <FileRef
+      location = "group:Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:TokenExMobileAPI/TokenExMobileAPI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TokenExMobileSample/TokenExMobileSample.xcodeproj">
+   </FileRef>
+</Workspace>

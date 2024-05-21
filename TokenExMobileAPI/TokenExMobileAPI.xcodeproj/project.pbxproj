@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8140B932BA4587000CD087A /* TXAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140B922BA4587000CD087A /* TXAuthentication.swift */; };
+		A8140BA52BA4A5C800CD087A /* TXTokenHMACProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140BA42BA4A5C800CD087A /* TXTokenHMACProvider.swift */; };
+		A8140C7D2BB2C2AD00CD087A /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C7C2BB2C2AD00CD087A /* MockURLProtocol.swift */; };
+		A8140C7F2BB2DA7B00CD087A /* ConstantAuthenticationKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C7E2BB2DA7B00CD087A /* ConstantAuthenticationKeyProvider.swift */; };
+		A8140C812BB2F48200CD087A /* ConstantTokenHMACProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C802BB2F48200CD087A /* ConstantTokenHMACProvider.swift */; };
+		A8140C842BB3116100CD087A /* TXTokenResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C832BB3116100CD087A /* TXTokenResponseTests.swift */; };
+		A8140C862BB3155000CD087A /* Data+initReadingInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C852BB3155000CD087A /* Data+initReadingInput.swift */; };
+		A8140C882BB319E700CD087A /* TXBINLookupResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C872BB319E700CD087A /* TXBINLookupResponseTests.swift */; };
+		A8140C922BB4159000CD087A /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = A8140C912BB4159000CD087A /* Nimble */; };
+		A8140C952BB4408700CD087A /* TokenExError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8140C932BB4405D00CD087A /* TokenExError.swift */; };
+		A84F8ABF2B99CEB800F43CD5 /* TokenExMobileAPIConfiguration+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F8ABE2B99CEB800F43CD5 /* TokenExMobileAPIConfiguration+Version.swift */; };
+		A84F8AC12B99D2AD00F43CD5 /* TokenExMobileAPISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F8AC02B99D2AD00F43CD5 /* TokenExMobileAPISettings.swift */; };
+		A8773B042B99CB7C00B18154 /* TXMobileAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8773B032B99CB7C00B18154 /* TXMobileAPIClient.swift */; };
+		A8773B062B99CC2300B18154 /* TokenExMobileAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8773B052B99CC2300B18154 /* TokenExMobileAPIConfiguration.swift */; };
+		A89800D52B99BF8F00F26393 /* Docs.docc in Sources */ = {isa = PBXBuildFile; fileRef = A89800D42B99BF8F00F26393 /* Docs.docc */; };
+		A89800DB2B99BF8F00F26393 /* TokenExMobileAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89800D02B99BF8F00F26393 /* TokenExMobileAPI.framework */; };
+		A89800E02B99BF8F00F26393 /* TXMobileAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89800DF2B99BF8F00F26393 /* TXMobileAPIClientTests.swift */; };
+		A89800E12B99BF8F00F26393 /* TokenExMobileAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A89800D32B99BF8F00F26393 /* TokenExMobileAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8B60FF92BA06C8D0016EB6F /* TXTokenizeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B60FF82BA06C8D0016EB6F /* TXTokenizeRequest.swift */; };
+		A8B60FFD2BA06D4F0016EB6F /* TXAuthenticatedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B60FFC2BA06D4F0016EB6F /* TXAuthenticatedRequest.swift */; };
+		A8B60FFF2BA0B2E90016EB6F /* TXBINLookupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B60FFE2BA0B2E90016EB6F /* TXBINLookupRequest.swift */; };
+		A8B610012BA0B3260016EB6F /* TXMobileAPIClient+BINLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B610002BA0B3260016EB6F /* TXMobileAPIClient+BINLookup.swift */; };
+		A8B610032BA0B4350016EB6F /* TXBINLookupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B610022BA0B4350016EB6F /* TXBINLookupResponse.swift */; };
+		A8B610172BA1B5D80016EB6F /* TXTokenizeWithCVVRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B610162BA1B5D80016EB6F /* TXTokenizeWithCVVRequest.swift */; };
+		A8B610192BA1B6EC0016EB6F /* TXMobileAPIClient+TokenizeWithCVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B610182BA1B6EC0016EB6F /* TXMobileAPIClient+TokenizeWithCVV.swift */; };
+		A8B6101B2BA1C6E90016EB6F /* TXTokenizeCVVRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B6101A2BA1C6E90016EB6F /* TXTokenizeCVVRequest.swift */; };
+		A8B6101D2BA1C7430016EB6F /* TXMobileAPIClient+TokenizeCVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B6101C2BA1C7430016EB6F /* TXMobileAPIClient+TokenizeCVV.swift */; };
+		A8B610232BA1F0370016EB6F /* Logger+TXLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B610222BA1F0370016EB6F /* Logger+TXLogger.swift */; };
+		A8B610272BA1F3270016EB6F /* TXBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B610262BA1F3270016EB6F /* TXBlocks.swift */; };
+		A8CA308C2B99E51D007A87EF /* TXAuthenticationKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA308B2B99E51D007A87EF /* TXAuthenticationKeyProvider.swift */; };
+		A8D183BB2B9B64730056ADE9 /* TXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D183BA2B9B64730056ADE9 /* TXError.swift */; };
+		A8D183C12B9B74390056ADE9 /* TXMobileAPIClient+Tokenize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D183C02B9B74390056ADE9 /* TXMobileAPIClient+Tokenize.swift */; };
+		A8D183C32B9B74BB0056ADE9 /* TXTokenScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D183C22B9B74BB0056ADE9 /* TXTokenScheme.swift */; };
+		A8D183C62B9B7C7E0056ADE9 /* TXTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D183C52B9B7C7E0056ADE9 /* TXTokenResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A89800DC2B99BF8F00F26393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89800C72B99BF8F00F26393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89800CF2B99BF8F00F26393;
+			remoteInfo = TokenExMobileAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8140B922BA4587000CD087A /* TXAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXAuthentication.swift; sourceTree = "<group>"; };
+		A8140BA42BA4A5C800CD087A /* TXTokenHMACProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTokenHMACProvider.swift; sourceTree = "<group>"; };
+		A8140BA82BAB080900CD087A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8140C7C2BB2C2AD00CD087A /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		A8140C7E2BB2DA7B00CD087A /* ConstantAuthenticationKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantAuthenticationKeyProvider.swift; sourceTree = "<group>"; };
+		A8140C802BB2F48200CD087A /* ConstantTokenHMACProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantTokenHMACProvider.swift; sourceTree = "<group>"; };
+		A8140C832BB3116100CD087A /* TXTokenResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTokenResponseTests.swift; sourceTree = "<group>"; };
+		A8140C852BB3155000CD087A /* Data+initReadingInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+initReadingInput.swift"; sourceTree = "<group>"; };
+		A8140C872BB319E700CD087A /* TXBINLookupResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXBINLookupResponseTests.swift; sourceTree = "<group>"; };
+		A8140C932BB4405D00CD087A /* TokenExError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExError.swift; sourceTree = "<group>"; };
+		A84F8ABE2B99CEB800F43CD5 /* TokenExMobileAPIConfiguration+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TokenExMobileAPIConfiguration+Version.swift"; sourceTree = "<group>"; };
+		A84F8AC02B99D2AD00F43CD5 /* TokenExMobileAPISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExMobileAPISettings.swift; sourceTree = "<group>"; };
+		A8773B032B99CB7C00B18154 /* TXMobileAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXMobileAPIClient.swift; sourceTree = "<group>"; };
+		A8773B052B99CC2300B18154 /* TokenExMobileAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExMobileAPIConfiguration.swift; sourceTree = "<group>"; };
+		A89800D02B99BF8F00F26393 /* TokenExMobileAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokenExMobileAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89800D32B99BF8F00F26393 /* TokenExMobileAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenExMobileAPI.h; sourceTree = "<group>"; };
+		A89800D42B99BF8F00F26393 /* Docs.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Docs.docc; sourceTree = "<group>"; };
+		A89800DA2B99BF8F00F26393 /* TokenExMobileAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenExMobileAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89800DF2B99BF8F00F26393 /* TXMobileAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXMobileAPIClientTests.swift; sourceTree = "<group>"; };
+		A8B60FF82BA06C8D0016EB6F /* TXTokenizeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTokenizeRequest.swift; sourceTree = "<group>"; };
+		A8B60FFC2BA06D4F0016EB6F /* TXAuthenticatedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TXAuthenticatedRequest.swift; path = ../TXAuthenticatedRequest.swift; sourceTree = "<group>"; };
+		A8B60FFE2BA0B2E90016EB6F /* TXBINLookupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXBINLookupRequest.swift; sourceTree = "<group>"; };
+		A8B610002BA0B3260016EB6F /* TXMobileAPIClient+BINLookup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TXMobileAPIClient+BINLookup.swift"; sourceTree = "<group>"; };
+		A8B610022BA0B4350016EB6F /* TXBINLookupResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXBINLookupResponse.swift; sourceTree = "<group>"; };
+		A8B610162BA1B5D80016EB6F /* TXTokenizeWithCVVRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXTokenizeWithCVVRequest.swift; sourceTree = "<group>"; };
+		A8B610182BA1B6EC0016EB6F /* TXMobileAPIClient+TokenizeWithCVV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TXMobileAPIClient+TokenizeWithCVV.swift"; sourceTree = "<group>"; };
+		A8B6101A2BA1C6E90016EB6F /* TXTokenizeCVVRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXTokenizeCVVRequest.swift; sourceTree = "<group>"; };
+		A8B6101C2BA1C7430016EB6F /* TXMobileAPIClient+TokenizeCVV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TXMobileAPIClient+TokenizeCVV.swift"; sourceTree = "<group>"; };
+		A8B610222BA1F0370016EB6F /* Logger+TXLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+TXLogger.swift"; sourceTree = "<group>"; };
+		A8B610262BA1F3270016EB6F /* TXBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXBlocks.swift; sourceTree = "<group>"; };
+		A8CA308B2B99E51D007A87EF /* TXAuthenticationKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXAuthenticationKeyProvider.swift; sourceTree = "<group>"; };
+		A8D183BA2B9B64730056ADE9 /* TXError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXError.swift; sourceTree = "<group>"; };
+		A8D183C02B9B74390056ADE9 /* TXMobileAPIClient+Tokenize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TXMobileAPIClient+Tokenize.swift"; sourceTree = "<group>"; };
+		A8D183C22B9B74BB0056ADE9 /* TXTokenScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTokenScheme.swift; sourceTree = "<group>"; };
+		A8D183C52B9B7C7E0056ADE9 /* TXTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTokenResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A89800CD2B99BF8F00F26393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89800D72B99BF8F00F26393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89800DB2B99BF8F00F26393 /* TokenExMobileAPI.framework in Frameworks */,
+				A8140C922BB4159000CD087A /* Nimble in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8140C822BB3110A00CD087A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8140C7E2BB2DA7B00CD087A /* ConstantAuthenticationKeyProvider.swift */,
+				A8140C802BB2F48200CD087A /* ConstantTokenHMACProvider.swift */,
+				A8140C7C2BB2C2AD00CD087A /* MockURLProtocol.swift */,
+				A8140C852BB3155000CD087A /* Data+initReadingInput.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8140C902BB4159000CD087A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8773AFE2B99C82200B18154 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A89800D22B99BF8F00F26393 /* TokenExMobileAPI */,
+				A89800DE2B99BF8F00F26393 /* TokenExMobileAPITests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A8773B002B99C92300B18154 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A8D183B92B9B64650056ADE9 /* Helpers */,
+				A8773B012B99C92900B18154 /* API Bindings */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A8773B012B99C92900B18154 /* API Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				A8773B022B99C97700B18154 /* Models */,
+				A8140C932BB4405D00CD087A /* TokenExError.swift */,
+				A8773B052B99CC2300B18154 /* TokenExMobileAPIConfiguration.swift */,
+				A84F8ABE2B99CEB800F43CD5 /* TokenExMobileAPIConfiguration+Version.swift */,
+				A84F8AC02B99D2AD00F43CD5 /* TokenExMobileAPISettings.swift */,
+				A8140B922BA4587000CD087A /* TXAuthentication.swift */,
+				A8CA308B2B99E51D007A87EF /* TXAuthenticationKeyProvider.swift */,
+				A8773B032B99CB7C00B18154 /* TXMobileAPIClient.swift */,
+				A8B610002BA0B3260016EB6F /* TXMobileAPIClient+BINLookup.swift */,
+				A8D183C02B9B74390056ADE9 /* TXMobileAPIClient+Tokenize.swift */,
+				A8B6101C2BA1C7430016EB6F /* TXMobileAPIClient+TokenizeCVV.swift */,
+				A8B610182BA1B6EC0016EB6F /* TXMobileAPIClient+TokenizeWithCVV.swift */,
+				A8140BA42BA4A5C800CD087A /* TXTokenHMACProvider.swift */,
+			);
+			path = "API Bindings";
+			sourceTree = "<group>";
+		};
+		A8773B022B99C97700B18154 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8B60FFC2BA06D4F0016EB6F /* TXAuthenticatedRequest.swift */,
+				A8B60FFE2BA0B2E90016EB6F /* TXBINLookupRequest.swift */,
+				A8B610022BA0B4350016EB6F /* TXBINLookupResponse.swift */,
+				A8B6101A2BA1C6E90016EB6F /* TXTokenizeCVVRequest.swift */,
+				A8B60FF82BA06C8D0016EB6F /* TXTokenizeRequest.swift */,
+				A8B610162BA1B5D80016EB6F /* TXTokenizeWithCVVRequest.swift */,
+				A8D183C52B9B7C7E0056ADE9 /* TXTokenResponse.swift */,
+				A8D183C22B9B74BB0056ADE9 /* TXTokenScheme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A89800C62B99BF8F00F26393 = {
+			isa = PBXGroup;
+			children = (
+				A8773AFE2B99C82200B18154 /* Project */,
+				A89800D12B99BF8F00F26393 /* Products */,
+				A8140C902BB4159000CD087A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A89800D12B99BF8F00F26393 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A89800D02B99BF8F00F26393 /* TokenExMobileAPI.framework */,
+				A89800DA2B99BF8F00F26393 /* TokenExMobileAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A89800D22B99BF8F00F26393 /* TokenExMobileAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A8140BA82BAB080900CD087A /* Info.plist */,
+				A8773B002B99C92300B18154 /* Source */,
+				A89800D32B99BF8F00F26393 /* TokenExMobileAPI.h */,
+				A89800D42B99BF8F00F26393 /* Docs.docc */,
+			);
+			path = TokenExMobileAPI;
+			sourceTree = "<group>";
+		};
+		A89800DE2B99BF8F00F26393 /* TokenExMobileAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8140C822BB3110A00CD087A /* Helpers */,
+				A89800DF2B99BF8F00F26393 /* TXMobileAPIClientTests.swift */,
+				A8140C832BB3116100CD087A /* TXTokenResponseTests.swift */,
+				A8140C872BB319E700CD087A /* TXBINLookupResponseTests.swift */,
+			);
+			path = TokenExMobileAPITests;
+			sourceTree = "<group>";
+		};
+		A8D183B92B9B64650056ADE9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8B610222BA1F0370016EB6F /* Logger+TXLogger.swift */,
+				A8B610262BA1F3270016EB6F /* TXBlocks.swift */,
+				A8D183BA2B9B64730056ADE9 /* TXError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A89800CB2B99BF8F00F26393 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89800E12B99BF8F00F26393 /* TokenExMobileAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A89800CF2B99BF8F00F26393 /* TokenExMobileAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89800E42B99BF8F00F26393 /* Build configuration list for PBXNativeTarget "TokenExMobileAPI" */;
+			buildPhases = (
+				A89800CB2B99BF8F00F26393 /* Headers */,
+				A89800CC2B99BF8F00F26393 /* Sources */,
+				A89800CD2B99BF8F00F26393 /* Frameworks */,
+				A89800CE2B99BF8F00F26393 /* Resources */,
+				A88BB08D2BA32FDF00F3C2F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokenExMobileAPI;
+			productName = TokenExMobileAPI;
+			productReference = A89800D02B99BF8F00F26393 /* TokenExMobileAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A89800D92B99BF8F00F26393 /* TokenExMobileAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89800E72B99BF8F00F26393 /* Build configuration list for PBXNativeTarget "TokenExMobileAPITests" */;
+			buildPhases = (
+				A89800D62B99BF8F00F26393 /* Sources */,
+				A89800D72B99BF8F00F26393 /* Frameworks */,
+				A89800D82B99BF8F00F26393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A89800DD2B99BF8F00F26393 /* PBXTargetDependency */,
+			);
+			name = TokenExMobileAPITests;
+			packageProductDependencies = (
+				A8140C912BB4159000CD087A /* Nimble */,
+			);
+			productName = TokenExMobileAPITests;
+			productReference = A89800DA2B99BF8F00F26393 /* TokenExMobileAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A89800C72B99BF8F00F26393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A89800CF2B99BF8F00F26393 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A89800D92B99BF8F00F26393 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = A89800CA2B99BF8F00F26393 /* Build configuration list for PBXProject "TokenExMobileAPI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A89800C62B99BF8F00F26393;
+			packageReferences = (
+				A8140C8F2BB325E100CD087A /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
+			productRefGroup = A89800D12B99BF8F00F26393 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A89800CF2B99BF8F00F26393 /* TokenExMobileAPI */,
+				A89800D92B99BF8F00F26393 /* TokenExMobileAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A89800CE2B99BF8F00F26393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89800D82B99BF8F00F26393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A88BB08D2BA32FDF00F3C2F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint lint --config ../.swiftlint.yml TokenExMobileAPI\n    swiftlint lint --config ../.swiftlint.yml TokenExMobileAPITests\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A89800CC2B99BF8F00F26393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89800D52B99BF8F00F26393 /* Docs.docc in Sources */,
+				A8B6101B2BA1C6E90016EB6F /* TXTokenizeCVVRequest.swift in Sources */,
+				A84F8AC12B99D2AD00F43CD5 /* TokenExMobileAPISettings.swift in Sources */,
+				A8CA308C2B99E51D007A87EF /* TXAuthenticationKeyProvider.swift in Sources */,
+				A8773B042B99CB7C00B18154 /* TXMobileAPIClient.swift in Sources */,
+				A8B610012BA0B3260016EB6F /* TXMobileAPIClient+BINLookup.swift in Sources */,
+				A8D183C62B9B7C7E0056ADE9 /* TXTokenResponse.swift in Sources */,
+				A8D183BB2B9B64730056ADE9 /* TXError.swift in Sources */,
+				A8140C952BB4408700CD087A /* TokenExError.swift in Sources */,
+				A8D183C12B9B74390056ADE9 /* TXMobileAPIClient+Tokenize.swift in Sources */,
+				A8B610272BA1F3270016EB6F /* TXBlocks.swift in Sources */,
+				A8140BA52BA4A5C800CD087A /* TXTokenHMACProvider.swift in Sources */,
+				A8B610172BA1B5D80016EB6F /* TXTokenizeWithCVVRequest.swift in Sources */,
+				A8B610232BA1F0370016EB6F /* Logger+TXLogger.swift in Sources */,
+				A8773B062B99CC2300B18154 /* TokenExMobileAPIConfiguration.swift in Sources */,
+				A8B60FFF2BA0B2E90016EB6F /* TXBINLookupRequest.swift in Sources */,
+				A8B60FF92BA06C8D0016EB6F /* TXTokenizeRequest.swift in Sources */,
+				A8D183C32B9B74BB0056ADE9 /* TXTokenScheme.swift in Sources */,
+				A84F8ABF2B99CEB800F43CD5 /* TokenExMobileAPIConfiguration+Version.swift in Sources */,
+				A8B60FFD2BA06D4F0016EB6F /* TXAuthenticatedRequest.swift in Sources */,
+				A8B610192BA1B6EC0016EB6F /* TXMobileAPIClient+TokenizeWithCVV.swift in Sources */,
+				A8140B932BA4587000CD087A /* TXAuthentication.swift in Sources */,
+				A8B6101D2BA1C7430016EB6F /* TXMobileAPIClient+TokenizeCVV.swift in Sources */,
+				A8B610032BA0B4350016EB6F /* TXBINLookupResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89800D62B99BF8F00F26393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8140C7F2BB2DA7B00CD087A /* ConstantAuthenticationKeyProvider.swift in Sources */,
+				A8140C882BB319E700CD087A /* TXBINLookupResponseTests.swift in Sources */,
+				A8140C812BB2F48200CD087A /* ConstantTokenHMACProvider.swift in Sources */,
+				A89800E02B99BF8F00F26393 /* TXMobileAPIClientTests.swift in Sources */,
+				A8140C862BB3155000CD087A /* Data+initReadingInput.swift in Sources */,
+				A8140C7D2BB2C2AD00CD087A /* MockURLProtocol.swift in Sources */,
+				A8140C842BB3116100CD087A /* TXTokenResponseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A89800DD2B99BF8F00F26393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89800CF2B99BF8F00F26393 /* TokenExMobileAPI */;
+			targetProxy = A89800DC2B99BF8F00F26393 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A89800E22B99BF8F00F26393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A89800E32B99BF8F00F26393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A89800E52B99BF8F00F26393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokenExMobileAPI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenex.TokenExMobileAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A89800E62B99BF8F00F26393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokenExMobileAPI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenex.TokenExMobileAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A89800E82B99BF8F00F26393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenex.TokenExMobileAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A89800E92B99BF8F00F26393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenex.TokenExMobileAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A89800CA2B99BF8F00F26393 /* Build configuration list for PBXProject "TokenExMobileAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89800E22B99BF8F00F26393 /* Debug */,
+				A89800E32B99BF8F00F26393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A89800E42B99BF8F00F26393 /* Build configuration list for PBXNativeTarget "TokenExMobileAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89800E52B99BF8F00F26393 /* Debug */,
+				A89800E62B99BF8F00F26393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A89800E72B99BF8F00F26393 /* Build configuration list for PBXNativeTarget "TokenExMobileAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89800E82B99BF8F00F26393 /* Debug */,
+				A89800E92B99BF8F00F26393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8140C8F2BB325E100CD087A /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8140C912BB4159000CD087A /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8140C8F2BB325E100CD087A /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A89800C72B99BF8F00F26393 /* Project object */;
+}

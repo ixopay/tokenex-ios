@@ -1,0 +1,54 @@
+disabled_rules:
+  - anyobject_protocol
+  - inert_defer
+  - unused_capture_list
+  - sorted_enum_cases
+  - force_unwrapping
+  - file_types_order
+  - no_grouping_extension
+  - explicit_type_interface
+  - extension_access_modifier
+  - one_declaration_per_file
+
+opt_in_rules:
+  - all
+
+excluded:
+  - Package.swift
+  - Pods
+  - vendor
+  - build*
+  - .build
+  - "*.yml"
+
+identifier_name:
+  allowed_symbols: _
+  min_length: 1
+  max_length: 100
+
+nesting:
+  type_level:
+    warning: 4
+    error: 5
+
+attributes:
+  attributes_with_arguments_always_on_line_above: false
+
+function_body_length: 120
+type_body_length: 800
+file_length: 800
+
+closure_body_length:
+  warning: 100
+  error: 200
+
+type_name:
+  allowed_symbols: _`
+  min_length: 1
+  max_length: 100
+
+vertical_whitespace:
+  max_empty_lines: 1
+
+trailing_comma:
+  mandatory_comma: true
